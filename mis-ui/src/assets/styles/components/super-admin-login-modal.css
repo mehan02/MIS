@@ -1,0 +1,44 @@
+.super-admin-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.super-admin-login-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.super-admin-login-field label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.super-admin-login-field input {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 14px;
+  color: #1f2937;
+  background: #ffffff;
+}
+
+.super-admin-login-field input:focus {
+  outline: 2px solid rgba(32, 176, 195, 0.4);
+  border-color: #20b0c3;
+}
+
+.super-admin-login-error {
+  margin: 0;
+  color: #dc2626;
+  font-size: 14px;
+}
+
+.super-admin-login-actions {
+  margin-top: 4px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}

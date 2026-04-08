@@ -1,0 +1,134 @@
+.admin-report-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.admin-report-details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 18px;
+}
+
+.admin-report-detail {
+  margin: 0;
+  color: #1f2937;
+  font-size: 14px;
+}
+
+.admin-report-detail strong {
+  color: #111827;
+}
+
+.admin-report-detail-full {
+  grid-column: 1 / -1;
+}
+
+.admin-report-status-section {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.admin-report-status-section label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.admin-report-status-select {
+  width: 100%;
+  max-width: 280px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 14px;
+  background: #ffffff;
+  color: #111827;
+}
+
+.admin-report-status-select:disabled {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+.admin-report-status-error {
+  margin: 0;
+  color: #b91c1c;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.admin-report-attachments {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.admin-report-attachments h4 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.admin-report-attachments-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.admin-report-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.admin-report-download-btn,
+.admin-report-update-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.admin-report-download-btn {
+  background: #e0f2fe;
+  color: #0c4a6e;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.admin-report-update-btn {
+  background: #0ea5a4;
+  color: #ffffff;
+}
+
+.admin-report-update-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .admin-report-details-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .admin-report-status-select {
+    max-width: none;
+  }
+
+  .admin-report-actions {
+    justify-content: flex-start;
+  }
+}

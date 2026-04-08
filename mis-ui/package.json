@@ -1,0 +1,72 @@
+{
+  "name": "mis-ui",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "typecheck": "tsc -b --pretty false",
+    "build": "pnpm typecheck && vite build",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "pnpm typecheck && pnpm lint && pnpm format:check",
+    "check:fix": "pnpm lint:fix && pnpm format",
+    "prepare": "husky",
+    "preview": "vite preview",
+    "dev:user": "VITE_API_BASE_URL=http://localhost:5096 VITE_DEV_USER_ROLE=USER VITE_DEV_EPF=U1 VITE_DEV_USER_NAME=Mehan vite --host --port 5173",
+    "dev:admin": "VITE_API_BASE_URL=http://localhost:5097 VITE_DEV_USER_ROLE=ADMIN VITE_DEV_EPF=ADM VITE_DEV_USER_NAME=Admin vite --host --port 5174",
+    "dev:superadmin": "VITE_API_BASE_URL=http://localhost:5098 VITE_DEV_USER_ROLE=SUPER_ADMIN VITE_DEV_EPF=SA1 VITE_DEV_USER_NAME=\"Super Admin\" vite --host --port 5175",
+    "dev:backend:prepare": "dotnet build ../src/Project.API/Project.API.csproj",
+    "dev:backend:user": "dotnet run --no-build --project ../src/Project.API/Project.API.csproj --urls http://localhost:5096",
+    "dev:backend:admin": "dotnet run --no-build --project ../src/Project.API/Project.API.csproj --urls http://localhost:5097",
+    "dev:backend:superadmin": "dotnet run --no-build --project ../src/Project.API/Project.API.csproj --urls http://localhost:5098",
+    "dev:backend": "dotnet run --project ../src/Project.API/Project.API.csproj --urls http://localhost:5096",
+    "dev:clean": "npx kill-port 5096 5097 5098 5173 5174 5175 || true",
+    "dev:all": "pnpm run dev:clean && pnpm run dev:backend:prepare && concurrently -k \"pnpm dev:backend:user\" \"pnpm dev:backend:admin\" \"pnpm dev:backend:superadmin\" \"pnpm dev:user\" \"pnpm dev:admin\" \"pnpm dev:superadmin\"",
+    "deploy:vercel": "vercel --prod"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,css,scss,md,html,yml,yaml}": [
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.11.2",
+    "axios": "^1.13.6",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-hook-form": "^7.71.2",
+    "react-icons": "^5.6.0",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^7.13.1",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "@types/node": "^25.5.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "concurrently": "^9.2.1",
+    "eslint": "^9.39.4",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.4.0",
+    "husky": "^9.1.7",
+    "kill-port": "^2.0.1",
+    "lint-staged": "^16.4.0",
+    "prettier": "^3.8.1",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.57.1",
+    "vite": "^8.0.1"
+  }
+}

@@ -1,0 +1,17 @@
+/Users/mehan/MIS/src/Project.Infrastructure/bin/Debug/net9.0/Project.Infrastructure.deps.json
+/Users/mehan/MIS/src/Project.Infrastructure/bin/Debug/net9.0/Project.Infrastructure.dll
+/Users/mehan/MIS/src/Project.Infrastructure/bin/Debug/net9.0/Project.Infrastructure.pdb
+/Users/mehan/MIS/src/Project.Infrastructure/bin/Debug/net9.0/Project.Application.dll
+/Users/mehan/MIS/src/Project.Infrastructure/bin/Debug/net9.0/Project.Core.dll
+/Users/mehan/MIS/src/Project.Infrastructure/bin/Debug/net9.0/Project.Core.pdb
+/Users/mehan/MIS/src/Project.Infrastructure/bin/Debug/net9.0/Project.Application.pdb
+/Users/mehan/MIS/src/Project.Infrastructure/obj/Debug/net9.0/Project.Infrastructure.csproj.AssemblyReference.cache
+/Users/mehan/MIS/src/Project.Infrastructure/obj/Debug/net9.0/Project.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mehan/MIS/src/Project.Infrastructure/obj/Debug/net9.0/Project.Infrastructure.AssemblyInfoInputs.cache
+/Users/mehan/MIS/src/Project.Infrastructure/obj/Debug/net9.0/Project.Infrastructure.AssemblyInfo.cs
+/Users/mehan/MIS/src/Project.Infrastructure/obj/Debug/net9.0/Project.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/mehan/MIS/src/Project.Infrastructure/obj/Debug/net9.0/Project..A2F26F6C.Up2Date
+/Users/mehan/MIS/src/Project.Infrastructure/obj/Debug/net9.0/Project.Infrastructure.dll
+/Users/mehan/MIS/src/Project.Infrastructure/obj/Debug/net9.0/refint/Project.Infrastructure.dll
+/Users/mehan/MIS/src/Project.Infrastructure/obj/Debug/net9.0/Project.Infrastructure.pdb
+/Users/mehan/MIS/src/Project.Infrastructure/obj/Debug/net9.0/ref/Project.Infrastructure.dll
